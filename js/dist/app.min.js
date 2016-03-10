@@ -56,13 +56,13 @@
 
 		showCurrentCoverage: function() {
 			var c = Weather.cache;
-			var currentTime = parseInt(new Date().getTime() / 1000);
+			var currentTime = new Date().getTime() / 1000;
 
 			// Show Day/Night Icon based on current time
 			if ( currentTime > c.sunrise && currentTime < c.sunset ) {
 				$('#icon').attr('class', 'wi wi-owm-' + c.icon);
 			} else {
-				$('#icon').attr('class', 'wi wi-owm-night' + c.icon);
+				$('#icon').attr('class', 'wi wi-owm-night-' + c.icon);
 			}
 
 			$('#current').html(Weather.cache.coverage);
