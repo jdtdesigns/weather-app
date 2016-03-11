@@ -74,8 +74,11 @@
 			var minutes = time.getMinutes();
 
 			// Display a zero before minutes if below 10
-			minutes < 10 ? $('#time').html(hours + ':0' + minutes) : 
-			$('#time').html(hours + ':' + minutes);
+			if ( hours < 10 ) {
+				$('#time').html(minutes < 10 ? '0' + hours + ':0' + minutes : '0' + hours + ':' + minutes);
+			} else {
+				$('#time').html(minutes < 10 ? hours + ':0' + minutes : hours + ':' + minutes);
+			}
 		},
 
 		changeUnit: function() {
