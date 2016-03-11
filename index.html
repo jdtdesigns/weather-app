@@ -8,36 +8,34 @@
     </head>
     <body>
     	<div class="Weather row center">
-    		<!-- Location/Temp Bubble -->
-    		<div class="Weather__main column column-center split-center">
+
+    		<div class="Weather__main column column-center split-center"> <!-- Begin Main Bubble -->
     			<h3>Local Weather</h3>
     			<h2 id="location">Your Location</h2>
     			<span id="temp">70</span>
-    			<!-- Unit Switch -->
-    			<div class="row center column-center Weather__main-units">
+    			<div class="row center column-center Weather__main-units"> <!-- Begin Unit Switch -->
     				<span>F</span>
     				<button id="type"><span id="unit-switch"></span></button>
     				<span>C</span>
     			</div> <!-- End Unit Switch -->
-    		</div> <!-- End Location/Temp Bubble -->
-    		
-    		<!-- Right Side Bubbles -->
-    		<div class="Weather__right column-split">
-    			<!-- Icon Bubble -->
-    			<div class="Weather__right-icon">
-    				<!-- Current Coverage -->
-    				<div class="column column-center">
+
+    		</div> <!-- End Main Bubble -->
+
+    		<div class="Weather__right column-split"> <!-- Begin Right Side Bubbles -->
+
+    			<div class="Weather__right-icon"> <!-- Begin Icon Bubble -->
+    				<div class="column column-center"> <!-- Begin Current Coverage -->
     					<i id="icon" class="wi wi-day-sunny"></i>
     					<span id="current">Sunny</span>
     				</div> <!-- End Current Coverage -->
     			</div> <!-- End Icon Bubble -->
-    			<!-- Time Bubble -->
-    			<div class="Weather__right-time column center column-center">
+    			<div class="Weather__right-time column center column-center"> <!-- Begin Time Bubble -->
     				<span id="time">15:00</span>
     			</div> <!-- End Time Bubble -->
     			<div id="refresh" class="Weather__right-refresh column center column-center">
     				<span>Refresh</span>
     			</div>
+
     		</div> <!-- End Right Side Bubbles -->
     	</div>
 
