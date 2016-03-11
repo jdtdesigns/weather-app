@@ -73,7 +73,7 @@
 			var hours = time.getHours();
 			var minutes = time.getMinutes();
 
-			// Display a zero before minutes if below 10
+			// Display a zero before hours/minutes if below 10
 			if ( hours < 10 ) {
 				$('#time').html(minutes < 10 ? '0' + hours + ':0' + minutes : '0' + hours + ':' + minutes);
 			} else {
