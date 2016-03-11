@@ -4,7 +4,7 @@
 		init: function() {
 			this.getLocation();
 			this.showTime();
-			$('#type').on('click', this.changeUnit);
+			$('#unit').on('click', this.changeUnit);
 			$('#refresh').on('click', this.refresh);
 		},
 
