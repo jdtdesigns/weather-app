@@ -83,6 +83,7 @@ body {
 // Page Styles
 .Weather {
 	min-width: 350px;
+  	// Main Bubble
 	&__main {
 		background: #71db71;
 		width: 250px;
@@ -100,6 +101,7 @@ body {
 			height: 350px;
 		}
 	}
+  	// Local Weather Header
 	h3 {
 		font-size: 1.3rem;
 		font-weight: 300;
@@ -110,6 +112,7 @@ body {
 			font-size: 2rem;
 		}
 	}
+  	// Location Header
 	h2 {
 		font-size: 1.5rem;
 		font-weight: 400;
@@ -151,7 +154,8 @@ body {
 			animation: fadeTwo .4s;
 		}
 	}
-	&__main-units {
+  	// Unit Toggle
+	&__main-toggle {
 		margin: 0 0 0 16px;
 		& > span {
 			font-size: 1.2rem;
@@ -181,6 +185,7 @@ body {
 				margin-left: 11px;
 			}
 		}
+    	// Toggle Switch
 		button {
 			background: #6bbf6b;
 			border: none;
@@ -235,6 +240,7 @@ body {
 			}
 		}
 	}
+  	// Right Side Bubbles
 	&__right {
 		&-icon, &-time, &-refresh {
 			background: #71db71;
@@ -247,6 +253,7 @@ body {
 				height: 6px;
 				width: 50px;
 				z-index: -1;
+				background: #fff;
 			}
 		}
 		&-icon {
@@ -264,8 +271,6 @@ body {
 				left: -30px;
 				top: 70px;
 				transform: rotate(-30deg);
-				background: #fff;
-				z-index: -1;
 				@include size(small) {
 					top: 80px;
 				}
@@ -281,6 +286,7 @@ body {
 					font-size: 3.5rem;
 				}
 			}
+      		// Current Text
 			#current {
 				font-size: 1rem;
 				@include size(small) {
@@ -307,8 +313,6 @@ body {
 				font-size: 2rem;
 			}
 			&:before {
-				background: #fff;
-				z-index: -1;
 				top: 32px;
 				left: -30px;
 				@include size(small) {
@@ -341,7 +345,6 @@ body {
 				background: #6ac96a;
 			}
 			&:before {
-				background: #fff;
 				top: -4px;
 				left: -30px;
 				transform: rotate(40deg);
