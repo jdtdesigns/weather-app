@@ -22,11 +22,11 @@
 
 		getLocation: function() {
 			if ( navigator.geolocation ) {
-				navigator.geolocation.getCurrentPosition(this.collectInformation);
+				navigator.geolocation.getCurrentPosition(this.getInformation);
 			}
 		},
 
-		collectInformation: function(position) {
+		getInformation: function(position) {
 			var c = Weather.cache;
 
 			$.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&units=imperial&APPID=3acc16ffae9e45df92a064e41646355f', function(json) {
