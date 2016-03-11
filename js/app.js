@@ -4,7 +4,7 @@
 		init: function() {
 			this.getLocation();
 			this.showTime();
-			$('#unit').on('click', this.changeUnit);
+			$('#unit-switch').on('click', this.changeUnit);
 			$('#refresh').on('click', this.refresh);
 		},
 
@@ -92,7 +92,7 @@
 				c.showFahrenheit = false;
 			}
 
-			$('#unit-switch').toggleClass('toggle');
+			$('#unit-toggle').toggleClass('toggle');
 			$('#temp').toggleClass('toggle');
 		},
 
